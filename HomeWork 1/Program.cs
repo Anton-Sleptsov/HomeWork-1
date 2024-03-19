@@ -31,7 +31,7 @@ namespace HomeWork_1
                     string num1Str = input.Substring(0, operatorIndex);
                     string opStr = input.Substring(operatorIndex, 1);
                     string num2Str = input.Substring(operatorIndex + 1);
-
+                    
                     if(num1Str[num1Str.Length - 1] == '-')
                     {
                         num1Str = num1Str.Substring(0, num1Str.Length - 1);
