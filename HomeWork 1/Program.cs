@@ -14,7 +14,7 @@ namespace HomeWork_1
                 try
                 {
                     int operatorIndex = -1;
-                    char[] operators = ['+', '-', '*', '/'];
+                    char[] operators = ['+', '-', '*', '/',':'];
                     foreach (char op in operators)
                     {
                         operatorIndex = input.LastIndexOf(op);
@@ -55,6 +55,7 @@ namespace HomeWork_1
                             result = num1 * num2;
                             break;
                         case "/":
+                        case ":":
                             if (num2 == 0)
                             {
                                 ShowErrorMessage("на 0 делить нельзя!");
